@@ -9,7 +9,6 @@
 html{
     box-sizing: border-box;
     font-size: 2rem;
-    background: cornsilk;
 }
 
 *,
@@ -22,6 +21,7 @@ h1{
     text-align: center;
     margin-block: 2rem;
     font-size: 2rem;
+    font-family: var(--heading-font-family);
 }
 
 main{
@@ -33,6 +33,7 @@ main{
 p{
     text-align: center;
     font-weight: bolder;
+    font-family: var(--default-font-family);
 }
 
 label.logo{
@@ -42,10 +43,6 @@ label.logo{
     font-weight: bold;
 }
 
-nav ul{
-    float: right;
-    margin: 30px
-}
 
 nav ul li{
     display: inline;
@@ -67,15 +64,13 @@ nav ul li a{
   .active {
     color: var(--primary-color);
 }
-/*
-.container{
-    background: darkseagreen;
-}*/
 
-@media (max-width:700px ){
+
+@media (max-width:900px ){
 
     h1{
         text-align: center;
+        font-size: 40px;
     }
     
     main{
@@ -86,11 +81,15 @@ nav ul li a{
     p{
         font-size: .7em;
         text-align: justify;
+        margin: 20px 40px;
     }
   
     img{
         height: 250px;
+        display: block;
+        margin: 0 40px ;
     }
+
     .last-section img{
         height:500px;
     }
