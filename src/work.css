@@ -1,3 +1,11 @@
+:root{
+    --primary-color: #6c63ff;
+    --secodary-color:  ;
+    --heading-font-family: Playfair Display;
+    --default-font-family: Poppins sans-serif;
+}
+
+
 html{
     box-sizing: border-box;
     font-size: 2rem;
@@ -55,8 +63,8 @@ nav ul li a{
     color: black;
 }
 
- li a:hover,
- li .active {
+ a:hover,
+  .active {
     color: var(--primary-color);
 }
 /*
