@@ -210,9 +210,10 @@ button:last-of-type{
      grid-area: img;
      object-fit: contain;
      height: 70rem;
-     width: 90rem;
+     width: 80rem;
      display: block;
      margin: 0 auto;
+     
   }
 
 
