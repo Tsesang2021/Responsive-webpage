@@ -6,17 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&             family=Poppins:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/contact.css">
+   
+
     <title>Contcat page</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a class="active" href="/work.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="navbar">
+             <a href="/" class="nav-logo"><img src="images/tsesang.png" alt="photo-of-me"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/work.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link"  id="active">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    </header>
+
+    <div class="container">
+        <h1>Feel free to reach me....</h1>
+        <main class="contact-box">
+            <section class="contact-left">
+                <h2>Send your request</h2>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" id="name-input" value="">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+41 776 234 567">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="your@email">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea  rows="5" placeholder="Your message"></textarea>
+                    <button id="send-button">Send</button>
+                </form>
+            </section>
+
+            <section class="contact-right">
+                <h2>Reach me</h2>
+                <table>
+                    <tr>
+                       <td>Email</td>
+                       <td>tsesang.dolkar@powercoders.org</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+41 776 123 456</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td> Eichfekdstrasse 12, 5000 Aarau, Aargau</td>
+                    </tr>
+                 </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <section>
+        <h2>Email</h2>
+        <p>
+            <a href="mailto:tsesang.dolkar@powercoders.org">
+                <img src="images/email-logo.png" alt="email-logo">
+            </a>
+        </p>
+        </section>
+        <section>
+            <h2>Github</h2>
+            <p>
+                <a href="https://github.com/Tsesang2021" target="_blank">
+                    <img src="images/github-logo.png" alt="github-logo">
+                </a>
+            </p>
+        </section>
+        <section>
+            <h2>Instagram</h2>
+            <p>
+                <a href="https://www.instagram.com/tsesang.codes" target="_blank">
+                    <img src="images/instagram-logo.png" alt="github-logo">
+                </a>
+            </p>
+        </section>
+
+    </footer>
+        
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script/contact.js"></script>
 </body>
 </html>
