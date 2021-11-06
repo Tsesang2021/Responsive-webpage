@@ -1,6 +1,6 @@
 :root{
     --primary-color: #6c63ff;
-    --secodary-color:  ;
+    --secodary-color:  #fff;
     --heading-font-family: Playfair Display;
     --default-font-family: Poppins sans-serif;
 }
@@ -8,7 +8,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 10px;
 }
 
 *,
@@ -17,32 +17,37 @@ html{
     box-sizing: inherit;
 }
 
+body{
+    background  :linear-gradient(18deg, rgb(155, 185, 54) 0%, rgb(139, 102, 241) 100%);
+}
+
 h1{
     text-align: center;
-    margin-block: 2rem;
-    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-size: 5rem;
     font-family: var(--heading-font-family);
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 5rem;
+    margin: 5rem;
 }
 
 p{
-    text-align: center;
+    font-size: 2rem;
     font-weight: bolder;
+    text-align: center;
     font-family: var(--default-font-family);
 }
 
-label.logo{
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 10px;
-    font-weight: bold;
-}
 
+
+nav{
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem;
+}
 
 nav ul li{
     display: inline;
@@ -53,24 +58,33 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 17px;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    margin-left: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    margin-left: 1.5rem;
     color: black;
+    text-align: end;
 }
 
  a:hover,
   .active {
-    color: var(--primary-color);
+    color: white;
 }
 
 
+.second-section{
+    margin-bottom: 4rem;
+}
+
 @media (max-width:900px ){
+    body{
+        background: lemonchiffon;
+    }
 
     h1{
         text-align: center;
-        font-size: 40px;
+        font-size: 4rem;
     }
     
     main{
@@ -79,7 +93,7 @@ nav ul li a{
         width: 100vh;
     }
     p{
-        font-size: .7em;
+        font-size: 2rem;
         text-align: justify;
         margin: 20px 40px;
     }
@@ -93,4 +107,9 @@ nav ul li a{
     .last-section img{
         height:500px;
     }
+
+     a:hover,
+      .active {
+        color:var(--primary-color);
+}
 }
